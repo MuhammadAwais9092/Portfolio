@@ -1,0 +1,339 @@
+/* Animations & Transitions */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Slide In From Bottom Animation */
+@keyframes slideInBottom {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Slide In From Left Animation */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Slide In From Right Animation */
+@keyframes slideInRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Reveal Text Animation */
+@keyframes revealText {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* Applying Animations */
+.reveal-text {
+  animation: revealText 1s ease-out forwards;
+}
+
+.reveal-text-delay {
+  animation: revealText 1s ease-out 0.3s forwards;
+  clip-path: inset(0 100% 0 0);
+}
+
+/* Section Animation */
+.section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Skill Bars Animation */
+.skill-bars.animated .skill-level {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+/* Portfolio Items Animation */
+.portfolio-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: var(--transition-standard);
+}
+
+.portfolio-item.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Portfolio Item Hover Effects */
+.portfolio-item-inner {
+  position: relative;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  height: 250px;
+}
+
+.portfolio-item-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.portfolio-info {
+  text-align: center;
+  padding: var(--spacing-md);
+  transform: translateY(20px);
+  transition: transform 0.5s ease;
+}
+
+.portfolio-item-inner:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-item-inner:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-item-inner:hover .portfolio-info {
+  transform: translateY(0);
+}
+
+.portfolio-info h3 {
+  color: var(--color-gold);
+  margin-bottom: var(--spacing-xs);
+}
+
+.portfolio-info p {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-sm);
+}
+
+.portfolio-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+}
+
+/* Timeline Animation */
+.timeline {
+  position: relative;
+  padding-left: var(--spacing-md);
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: var(--color-gold);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: var(--spacing-lg);
+  padding-left: var(--spacing-xl);
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.timeline-item.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--color-gold);
+  transform: translateX(-7px);
+}
+
+.timeline-date {
+  color: var(--color-gold);
+  font-weight: 500;
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Scroll Top Button */
+.scroll-top {
+  position: fixed;
+  bottom: var(--spacing-md);
+  right: var(--spacing-md);
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-gold);
+  color: var(--color-black);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-standard);
+  z-index: 99;
+}
+
+.scroll-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-top:hover {
+  background-color: var(--color-gold-light);
+  transform: translateY(-5px);
+}
+
+/* Form Animations */
+.form-group {
+  position: relative;
+  margin-bottom: var(--spacing-md);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: var(--spacing-sm);
+  background-color: var(--color-darker);
+  border: 1px solid transparent;
+  border-radius: var(--border-radius);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  transition: var(--transition-standard);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--color-gold);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* Social Links Animation */
+.social-links {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-darker);
+  color: var(--color-text);
+  transition: var(--transition-standard);
+}
+
+.social-link:hover {
+  background-color: var(--color-gold);
+  color: var(--color-black);
+  transform: translateY(-5px);
+}
+
+/* Contact Item Animation */
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-lg);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.contact-item.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  color: var(--color-gold);
+  margin-right: var(--spacing-md);
+  margin-top: var(--spacing-xs);
+}
+
+/* Footer Animation */
+footer {
+  background-color: var(--color-darker);
+  padding: var(--spacing-lg) 0;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: var(--spacing-xs);
+}
+
+footer .fa-heart {
+  color: var(--color-ruby);
+  animation: pulse 1.5s infinite;
+}

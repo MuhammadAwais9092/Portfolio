@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Portfolio | Muhammad Awais</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="theme-toggle">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+  </div>
+
+  <div id="particles-js"></div>
+
+  <header>
+    <div class="logo">MA</div>
+    <nav>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="reveal-text">Creative <span class="highlight">Computing Graduate</span></h1>
+            <p class="subtitle reveal-text-delay">Blending design and code to build intuitive web experiences</p>
+          <div class="cta-buttons">
+            <a href="#portfolio" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-frame">
+            <img src="public/pic.jpg" alt="Profile Image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>I am a passionate Creative Computing graduate with a focus on building beautiful, functional digital experiences. I enjoy combining technical skills with creative thinking to develop projects that are both innovative and user-centered.</p>
+            <p>With a background in both design and development, I aim to bridge the gap between aesthetics and functionality—crafting solutions that are engaging, accessible, and technically sound.</p>
+            
+            <div class="skills">
+              <h3>My Skills</h3>
+              <div class="skill-bars">
+                <div class="skill">
+                  <span class="skill-name">UI/UX Design</span>
+                  <div class="skill-bar">
+                    <div class="skill-level" style="width: 95%"></div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <span class="skill-name">Front-end Development</span>
+                  <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <span class="skill-name">Creative Computing</span>
+                  <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <span class="skill-name">Interactive Media</span>
+                  <div class="skill-bar">
+                    <div class="skill-level" style="width: 88%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="philosophy">
+            <h3>Design Philosophy</h3>
+            <div class="philosophy-cards">
+              <div class="philosophy-card">
+                <i class="fas fa-lightbulb"></i>
+                <h4>Innovation</h4>
+                <p>Creating fresh solutions to complex problems through creative thinking.</p>
+              </div>
+              <div class="philosophy-card">
+                <i class="fas fa-user-check"></i>
+                <h4>User-Centric</h4>
+                <p>Placing the user's needs at the core of every design decision.</p>
+              </div>
+              <div class="philosophy-card">
+                <i class="fas fa-balance-scale"></i>
+                <h4>Balance</h4>
+                <p>Finding harmony between aesthetics and functionality.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <section id="portfolio" class="section">
+      <div class="container">
+        <h2 class="section-title">My <span class="highlight">Portfolio</span></h2>
+
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Design</button>
+          <button class="filter-btn" data-filter="app">App Development</button>
+          <button class="filter-btn" data-filter="game">Game Development</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- Project 1 -->
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-item-inner">
+              <img src="/public/Nutribuddy.png" alt="NutriBuddy Project">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3>NutriBuddy, Group Project</h3>
+                  <p>Web Design, UX/UI</p>
+                  <div class="portfolio-links">
+                    <a href="https://nutribuddy.vercel.app/" class="btn btn-small" target="_blank" rel="noopener noreferrer">Visit</a>
+                    <a href="https://drive.google.com/drive/folders/1KguLtr8RznI2IpDch67bTcY5t7TWPW_G?usp=sharing" class="btn btn-small" target="_blank" rel="noopener noreferrer">Code</a>
+                    <a href="https://www.figma.com/design/DHHnjaVSS3twJqL2httQlY/High-Fidelity?t=4tLqvFZc1e6zjqWZ-1" class="btn btn-small" target="_blank" rel="noopener noreferrer">Figma</a>
+                  </div>        
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-item-inner">
+              <img src="/public/rider.png" alt="Modern Bike Shop">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3>Modern E-commerce Bike Shop</h3>
+                  <p>UX/UI</p>
+                  <div class="portfolio-links">
+                    <a href="https://www.figma.com/design/vq31TZ4W4qzfoUf5QlrRSV/Designing-E-Commerce-Bike-shop?node-id=0-1&t=8nhSdOP7QYUjpmXg-1" class="btn btn-small" target="_blank" rel="noopener noreferrer">Figma</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-item-inner">
+              <img src="public/news-now.png" alt="News Website">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3>News Website</h3>
+                  <p>Web Design, UX/UI</p>
+                  <div class="portfolio-links">
+                    <a href="https://newsnow-anxk.onrender.com" class="btn btn-small" target="_blank" rel="noopener noreferrer">Visit</a>
+                    <a href="https://github.com/MuhammadAwais9092/NewsNow" class="btn btn-small" target="_blank" rel="noopener noreferrer">Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-item-inner">
+              <img src="public/Fist-game.png" alt="ST Gaming">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3>ST Gaming</h3>
+                  <p>Web Design, UX/UI</p>
+                  <div class="portfolio-links">
+                    <a href="https://muhammadawais9092.github.io/demo.github.io/" class="btn btn-small" target="_blank" rel="noopener noreferrer">Visit</a>
+                    <a href="https://github.com/MuhammadAwais9092/demo.github.io" class="btn btn-small" target="_blank" rel="noopener noreferrer">Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-item-inner">
+              <img src="public/G-Hub.png" alt="G-HUB">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3>G-HUB</h3>
+                  <p>Web Design, UX/UI</p>
+                  <div class="portfolio-links">
+                    <a href="https://muhammadawais9092.github.io/G-HUB.github.io/" class="btn btn-small" target="_blank" rel="noopener noreferrer">Visit</a>
+                    <a href="https://github.com/MuhammadAwais9092/G-HUB.github.io" class="btn btn-small" target="_blank" rel="noopener noreferrer">Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="portfolio-item" data-category="app">
+            <div class="portfolio-item-inner">
+              <img src="/public/app.png" alt="Secure Right">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3>Secure Right</h3>
+                  <p>UX/UI</p>
+                  <div class="portfolio-links">
+                    <a href="https://www.figma.com/design/PZ0aMC6jRpJzaKTEZ9ja9U/High-Fidelity?t=4tLqvFZc1e6zjqWZ-1" class="btn btn-small" target="_blank" rel="noopener noreferrer">Figma</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7 -->
+          <div class="portfolio-item" data-category="app">
+            <div class="portfolio-item-inner">
+              <img src="https://images.pexels.com/photos/270632/pexels-photo-270632.jpeg" alt="Book Worm">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3>Book Worm</h3>
+                  <p>App Development, UX/UI</p>
+                  <div class="portfolio-links">
+                    <a href="https://drive.google.com/drive/folders/1Oci3GWIbFptO3rIohgSOorRvqeQn9P33?usp=sharing" class="btn btn-small" target="_blank" rel="noopener noreferrer">Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8 -->
+          <div class="portfolio-item" data-category="app">
+            <div class="portfolio-item-inner">
+              <img src="https://images.pexels.com/photos/6633920/pexels-photo-6633920.jpeg" alt="Mythical Fantasia">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3>Mythical Fantasia</h3>
+                  <p>App Development, UX/UI</p>
+                  <div class="portfolio-links">
+                    <a href="https://drive.google.com/drive/folders/1T87Uc-yOUGi_ru_GEWRKIeC--VJTMenM?usp=sharing" class="btn btn-small" target="_blank" rel="noopener noreferrer">Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 9 -->
+          <div class="portfolio-item" data-category="game">
+            <div class="portfolio-item-inner">
+              <img src="/public/Dungeon-Dive.jpg" alt="Dungeon Dive">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3>Dungeon Dive</h3>
+                  <p>Unity, C#</p>
+                  <div class="portfolio-links">
+                    <a href="https://muhdawaisnsm.itch.io/dungeon-dive" class="btn btn-small" target="_blank" rel="noopener noreferrer">Play</a>
+                    <a href="https://drive.google.com/drive/folders/16Zb7Wfwusestxkm7l1yiAcsyl-o8_e4v?usp=sharing" class="btn btn-small" target="_blank" rel="noopener noreferrer">Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- /.portfolio-grid -->
+      </div> <!-- /.container -->
+    </section>
+
+    <section id="resume" class="section">
+      <div class="container">
+        <h2 class="section-title">My <span class="highlight">Resume</span></h2>
+        <div class="resume-content">
+          <div class="resume-download">
+            <p>Download my complete resume to learn more about my skills, experience, and qualifications.</p>
+            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download CV (PDF)</a>
+          </div>
+            <div class="resume-preview">
+              <div class="resume-section">
+                <h3>Education</h3>
+                <div class="timeline">
+
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <h4>BSc (Hons) in Creative Computing</h4>
+                      <p class="timeline-date">2022 – Present</p>
+                      <p>Bath Spa University</p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <h4>Higher Secondary School Certificate (HSSC)</h4>
+                      <p class="timeline-date">2011 – 2022</p>
+                      <p>SRAMPS, Dubai</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+           <div class="resume-section">
+                  <h3>Experience</h3>
+                  <div class="timeline">
+
+                    <div class="timeline-item">
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-content">
+                        <h4>Customer Service Researcher</h4>
+                        <p class="timeline-date">Sept 2023 – Jan 2024</p>
+                        <p>Ethos, Dubai</p>
+                        <ul>
+                          <li>Investigated and reported customer pain points</li>
+                          <li>Referred critical cases to high officials</li>
+                          <li>Compiled full customer issue reports</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="timeline-item">
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-content">
+                        <h4>Advertising Sales Agent</h4>
+                        <p class="timeline-date">Aug 2022 – Sept 2022</p>
+                        <p>Byju’s, Dubai</p>
+                        <ul>
+                          <li>Pitched new educational programs</li>
+                          <li>Achieved sales through customer engagement</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>muhdawaisnsm@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Phone</h3>
+                <p>+971 50 753 9092</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Location</h3>
+                <p>Dubai, United Arab Emirates</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/MuhammadAwais9092" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/muhd-awais-b9158233a/" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.youtube.com/@muhdawais1646" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-dribbble"></i></a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Muhammad Awais. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <div class="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script src="js/particles.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/theme.js"></script>
+</body>
+</html>
